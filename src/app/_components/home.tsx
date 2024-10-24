@@ -31,7 +31,7 @@ const Home = () => {
         playsInline
         className="absolute top-0 z-10 min-h-screen min-w-screen object-fill"
       >
-        <source src="/background.mp4" type="video/mp4" />
+        <source src="/1022.mp4" type="video/mp4" />
       </video>
     </section>
   );
