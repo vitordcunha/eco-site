@@ -1,5 +1,6 @@
 import Header from "@/_components/header";
 import GetStartedButton from "@/_components/get-started-button";
+import TitleText from "@/_components/title-text";
 
 const Home = () => {
   return (
@@ -9,9 +10,7 @@ const Home = () => {
       <main className="h-full w-full overflow-hidden">
         <div className="relative z-30 w-full h-full">
           <div className="flex flex-col gap-10 text-white text-center mt-10 items-center h-full">
-            <h1 className="text-6xl font-light">
-              Eco-Friendly Energy Solutions <br /> for a Sustaintable Future
-            </h1>
+            <TitleText />
 
             <p className="text-xl font-light">
               We customize solar solution to fit your unique energy <br />{" "}
