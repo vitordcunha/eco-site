@@ -3,7 +3,9 @@
 import { motion, Variants } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-const GetStartedButton = () => {
+import { cn } from "@/_lib/utils";
+
+const GetStartedButton = (props: { className?: string }) => {
   const variants: Variants = {
     animate: {
       height: "52px",
@@ -15,7 +17,10 @@ const GetStartedButton = () => {
 
   return (
     <motion.button
-      className="flex bg-white rounded-full text-sm font-semibold items-center gap-10 h-[50px] w-[180px] relative text-black hover:text-white"
+      className={cn(
+        "flex bg-white rounded-full text-sm font-semibold items-center gap-10 h-[50px] w-[180px] relative text-black hover:text-white",
+        props.className
+      )}
       initial={false}
       whileHover="animate"
     >
