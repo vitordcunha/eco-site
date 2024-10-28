@@ -8,7 +8,6 @@ import {
 import { FileText } from "lucide-react";
 import { FloatingDock } from "@/_components/ui/floating-dock";
 import Services from "./_components/services";
-import Benefits from "./_components/benefits";
 
 export default function Site() {
   return (
@@ -16,7 +15,6 @@ export default function Site() {
       <Home />
       <AboutUs />
       <Services />
-      <Benefits />
 
       <div className="fixed bottom-3 z-30 left-1/2 translate-x-[-50%]">
         <FloatingDock items={links} />
