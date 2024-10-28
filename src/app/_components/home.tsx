@@ -1,13 +1,14 @@
 import Header from "@/_components/header";
 import GetStartedButton from "@/_components/get-started-button";
 import TitleText from "@/_components/title-text";
+import ExpandableArticle from "./expandable-article";
 
 const Home = () => {
   return (
     <section className="relative h-screen overflow-hidden">
       <Header />
 
-      <main className="h-full w-full overflow-hidden">
+      <main className="relative h-full w-full overflow-hidden">
         <div className="relative z-30 w-full h-full">
           <div className="flex flex-col gap-10 text-white text-center mt-10 items-center h-full">
             <TitleText />
@@ -19,6 +20,10 @@ const Home = () => {
 
             <GetStartedButton />
           </div>
+        </div>
+
+        <div className="absolute left-10 bottom-24 z-30">
+          <ExpandableArticle />
         </div>
       </main>
 
