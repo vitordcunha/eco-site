@@ -5,7 +5,7 @@ import { Zap } from "lucide-react";
 
 const Services = () => {
   return (
-    <section className="h-screen w-screen bg-white">
+    <section className="h-screen w-screen bg-gray-100">
       <div className="flex h-full w-full p-20">
         <div className="w-full flex flex-col justify-between h-full py-16">
           <h3 className="uppercase font-light text-gray-400 text-2xl">
