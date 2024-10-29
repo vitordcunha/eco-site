@@ -1,13 +1,11 @@
 import Counter from "@/_components/counter";
 import GetStartedButton from "@/_components/get-started-button";
 import { DirectionAwareHover } from "@/_components/ui/direction-aware-hover";
-import { BentoGrid } from "@/_components/ui/grid";
-import Image from "next/image";
 
 const AboutUs = () => {
   return (
     <section className="h-screen bg-white overflow-hidden">
-      <div className="flex items-center flex-grow p-10 text-black border-b">
+      <div className="flex items-center p-10 text-black border-b">
         {items.map((item) => (
           <div
             key={item.label}
@@ -25,22 +23,22 @@ const AboutUs = () => {
         ))}
       </div>
 
-      <div className="w-full flex p-10">
-        <div className="flex flex-col w-full px-5">
+      <div className="w-full h-full flex p-10">
+        <div className="flex flex-col w-full h-full px-5">
           <h3 className="text-6xl text-black">
             Shaping The Future <br />
             <span className="text-blue-600">SmartTechForGreen</span> <br />
             Energy And Grid Revenue
           </h3>
 
-          <BentoGrid className="md:grid-cols-2 md:grid-rows-2 mt-10">
+          <div className="py-10 h-[550px] w-[750px]">
             <DirectionAwareHover
               imageUrl="/about-us-worker.jpg"
-              className="rounded-md md:w-[350px] md:h-[300px]"
+              className="rounded-md md:w-full md:h-full"
             >
               <p>Wind farm power</p>
             </DirectionAwareHover>
-          </BentoGrid>
+          </div>
         </div>
 
         <div className="w-full h-full text-2xl text-black">
@@ -50,7 +48,7 @@ const AboutUs = () => {
             all.
           </p>
 
-          <p className="mt-10">
+          <p className="mt-5">
             Our advanced solutions not only reduce carbon footprints but also
             optimize energy consumption, making it easier for individuals and
             businesses to contribute to a cleaner planet. With our innovative
